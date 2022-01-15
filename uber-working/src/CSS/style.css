@@ -2,14 +2,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+/* body {
     margin: 0;
-}
+} */
 
 header {
     position: relative;
     height: 50px;
-    overflow-x: hidden;
 }
 
 nav {
@@ -22,7 +21,6 @@ nav {
 
 
 .menu {
-    /* position: sticky; */
     padding: 16px 70px;
     margin: 0;
     list-style-type: none;
@@ -42,7 +40,7 @@ nav {
     padding-right: 40px;
 }
 
-.menu :last-child {
+.menu:last-child {
     border-right: none;
 }
 
@@ -107,7 +105,7 @@ nav {
 
 .promo {
     min-height: 800px;
-    background: url("./img/uber_bg.jpg") center center/cover no-repeat;
+    background: url("../img/uber_bg.jpg") center center/cover no-repeat;
     padding: 150px 0 134px 0;
 }
 
@@ -164,7 +162,7 @@ nav {
     padding: 20px
 }
 
-.reasons__benefits {
+.label {
     text-align: center;
     width: 115px;
     margin: 0 auto;
@@ -175,7 +173,7 @@ nav {
     text-transform: uppercase;
 }
 
-.reasons__header {
+.title {
     margin: 32px 0 0 0;
     font-weight: bold;
     font-size: 38px;
