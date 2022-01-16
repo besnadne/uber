@@ -1,6 +1,11 @@
 $blue-color: #1EACC7
-
+$pink-color: #FF5656    
 $white-color: #FFFFFF
+
+=hover
+    &:hover
+        background-image: none
+        background-color: $blue-color
 
 *
     font-family: 'Roboto', sans-serif
@@ -59,7 +64,7 @@ nav
     margin: 21px 0 0 0
     font-weight: 300
     font-size: 12px
-    color: #ffffff
+    color: $white-color
     text-align: right
 
 .subheader-tel__number
@@ -87,6 +92,7 @@ nav
     text-transform: uppercase
     color: $white-color
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +hover
 
 .promo
     min-height: 800px
@@ -136,6 +142,7 @@ nav
     font-weight: 400
     text-transform: uppercase
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +hover
 
 .reasons
     padding: 71px 0 65px 0
@@ -262,6 +269,33 @@ nav
         cursor: pointer
         bottom: 35px
 
+        &:hover
+            &::before
+                height: 3px
+                width: 16px
+            &::after
+                width: 3px
+                height: 16px    
+                
+        &::before
+            content: ""
+            display: block
+            width: 14px
+            height: 2px
+            background-color: $blue-color
+            transition: 0.8s
+        
+        &::after
+            content: ""
+            display: block
+            width: 2px
+            height: 14px
+            background-color: $blue-color
+            position: absolute
+            right: 50%
+            transform: translateX(50%) 
+            transition: 0.3s
+
 .car
     position: relative
     height: 896px
@@ -292,6 +326,54 @@ nav
             color: #222222
             font-size: 17px
 
+.requare
+    padding: 68px 0 87px 0
+
+    &__block
+        margin: 37px 0 37px 0
+
+        &_mb
+            margin-bottom: 0
+
+    &__title
+        color: #1CA8C3
+        font-size: 22px
+        font-weight: 400
+
+        &_warning
+            color: $pink-color
+    
+    &__list
+        padding: 0
+
+    &-list__item
+        color: #222222
+        font-weight: 300
+        font-size: 17px
+        list-style-type: none
+        position: relative
+        margin-top: 10px
+        margin-left: 50px
+        
+
+        &::before
+            position: absolute
+            content: ""
+            display: block
+            width: 21px
+            height: 20px
+            background: url("../img/requare_blue.svg") 
+            left: -32px    
+            top: 3px
+
+        &_warning::before
+            background: url("../img/requare_red.svg")
+    
+    &__dscr
+        font-weight: 300
+        font-size: 17px
+        color: #1CA8C3
+        margin-top: 25px
 
   
 
